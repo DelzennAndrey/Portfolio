@@ -1,0 +1,556 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:url(../image/globe-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* select all class with same style property */
+.main-skills > h1,.main-project > h1,.main-service > h1,.main-contact > h1{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+.percentBar{
+    width: auto;
+    height: 18px;
+    border: #252525 solid;
+    border-radius:50px;
+    margin: 10px auto;      
+    color: #ffffff;
+    position: relative;
+    font-size: 14px;
+}
+.calculator_card a,.rock-paper-scissor_card a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0a0d9c;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.calculator_card a:hover,.rock-paper-scissor_card a:hover{
+    background-color: #0a0c9c9e;
+}
+.home-main .accounts,.main-contact .accounts{
+    font-size: 50px;
+    text-align: left;
+}
+.home-main .accounts a,.main-contact .accounts a{
+    color: #52a9ff;
+    text-decoration: none;
+    transition: transform 160ms;
+}
+.home-main .accounts a:hover,.main-contact .accounts a:hover{
+    transform: scale(1.5);
+}
+button{
+    cursor: pointer;
+}
+ /*Home section  */
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.home-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+.home-main .pic img{
+    width: 18rem;
+    border-radius: 50%;
+    background-color:#220030dd;
+}
+.home-main .content{
+    width: 50%;
+    height: auto;
+    color: white;
+    text-align: center;
+}
+.home-main .content h1{
+    font-size: 50px;
+    color: #48f3ff;
+}
+.home-main .content p{
+    font-size: 20px;
+}
+/* Skills Section */
+.skills{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0c093db9;
+    display: flex;
+    justify-content: center;
+}
+.main-skills{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+/* Skills Section Card */
+.main-skills .card{
+    width: auto;
+    height: auto;
+}
+.main-skills [class*="_card"]{
+    width: 190px;
+    height: 180px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 30px;
+    color:#000;
+    padding: 10px;
+}
+.main-skills .box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    column-gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.main-skills .box h1{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+.main-skills img{
+    width: 60px;
+}
+/* Skills Percent */
+.html_card ~ .percentBar div{
+    background: #ff8b31;
+    width: 65%;
+    height: 100%;
+    border-radius:50px;
+}
+.html_card ~ .percentBar::after{
+    content: '65%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.css_card ~ .percentBar div{
+    background: #3431ff;
+    width: 54%;
+    height: 100%;
+    border-radius:50px;
+}
+.css_card ~ .percentBar::after{
+    content: '54%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.js_card ~ .percentBar div{
+    background: #a7a401;
+    width: 15%;
+    height: 100%;
+    border-radius:50px;
+}
+.js_card ~ .percentBar::after{
+    content: '15%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.github_card ~ .percentBar div{
+    background: #747473;
+    width: 58%;
+    height: 100%;
+    border-radius:50px;
+}
+.github_card ~ .percentBar::after{
+    content: '58%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+
+.git_card ~ .percentBar div{
+    background: #bb6b01;
+    width: 35%;
+    height: 100%;
+    border-radius:50px;
+}
+.git_card ~ .percentBar::after{
+    content: '35%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* Hobbies or Talent */
+.badminton_card ~ .percentBar div{
+    background: #0040ff;
+    width: 62%;
+    height: 100%;
+    border-radius:50px;
+}
+.badminton_card ~ .percentBar::after{
+    content: '62%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.basketball_card ~ .percentBar div{
+    background: #f93a3a;
+    width: 25%;
+    height: 100%;
+    border-radius:50px;
+}
+.basketball_card ~ .percentBar::after{
+    content: '25%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.travel_card ~ .percentBar div{
+    background: #40ff00;
+    width: 65%;
+    height: 100%;
+    border-radius:50px;
+}
+.travel_card ~ .percentBar::after{
+    content: '65%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.codm_card ~ .percentBar div{
+    background: #4400ff;
+    width: 93%;
+    height: 100%;
+    border-radius:50px;
+}
+.codm_card ~ .percentBar::after{
+    content: '93%';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* Project Section */
+.project{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #060057b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-project .box{
+    display: flex;
+    justify-content:space-evenly;
+    column-gap: 60px;
+    flex-wrap: wrap;
+}
+/* Project Card */
+.main-project [class*="_card"]{
+    background-color: #fff;
+    width: 260px;
+    height: 230px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 5px;
+}
+.main-project .card{
+    width: auto;
+    height: auto;
+}
+.main-project img{
+    width: 70px;
+    margin-top: 20px;
+}
+/* Project Calculator Percent */
+/* javascript percent */
+.calculator_card ~ .js-percent .percentBar div{
+    height: 100%;
+    background: #999602;
+    width: 19.1%;
+    border-radius: 30px;
+}
+.calculator_card ~ .js-percent .percentBar::after{
+    content: "19.1%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.calculator_card ~ .js-percent .percentBar::before{
+    content: "JAVASCRIPT";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* html percent */
+.calculator_card ~ .html-percent .percentBar div{
+    height: 100%;
+    background: #d88200;
+    width: 55.5%;
+    border-radius: 30px;
+}
+.calculator_card ~ .html-percent .percentBar::after{
+    content: "55.5%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.calculator_card ~ .html-percent .percentBar::before{
+    content: "HTML";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* css percent */
+.calculator_card ~ .css-percent .percentBar div{
+    height: 100%;
+    background: #3549ff;
+    width: 25.4%;
+    border-radius: 30px;
+}
+.calculator_card ~ .css-percent .percentBar::after{
+    content: "25.4%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.calculator_card ~ .css-percent .percentBar::before{
+    content: "CSS";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* rock paper scissor project */
+/* js percent */
+.rock-paper-scissor_card ~ .js-percent .percentBar div{
+    height: 100%;
+    background: #999602;
+    width: 50.5%;
+    border-radius: 30px;
+}
+.rock-paper-scissor_card ~ .js-percent .percentBar::after{
+    content: "50.5%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.rock-paper-scissor_card ~ .js-percent .percentBar::before{
+    content: "JAVASCRIPT";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* html percent */
+.rock-paper-scissor_card ~ .html-percent .percentBar div{
+    height: 100%;
+    background: #d88200;
+    width: 24.4%;
+    border-radius: 30px;
+}
+.rock-paper-scissor_card ~ .html-percent .percentBar::after{
+    content: "24.4%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.rock-paper-scissor_card ~ .html-percent .percentBar::before{
+    content: "HTML";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* css percent */
+.rock-paper-scissor_card ~ .css-percent .percentBar div{
+    height: 100%;
+    background: #3549ff;
+    width: 25.1%;
+    border-radius: 30px;
+}
+.rock-paper-scissor_card ~ .css-percent .percentBar::after{
+    content: "25.1%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.rock-paper-scissor_card ~ .css-percent .percentBar::before{
+    content: "CSS";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* Service Section */
+.service{
+    background-color: #0c093dbd;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-service .box{
+    display: flex;
+    justify-content:center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+.main-service img{
+    width: 80px;
+}
+/* service  card */
+.main-service .card{
+    width: auto;
+    height: auto;
+}
+.main-service [class*="_card"]{
+    width: 180px;
+    height: 200px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 30px;
+    color:#000;
+    padding: 10px;
+}
+/* services percent */
+.main-service .editing_card ~ .percentBar div{
+    height: 100%;
+    background: #1aff00;
+    width: 45%;
+    border-radius: 30px;
+}
+.main-service .editing_card ~ .percentBar div::after{
+    content: "45%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.main-service .frontend_card ~ .percentBar div{
+    height: 100%;
+    background: #1900ff;
+    width: 52%;
+    border-radius: 30px;
+}
+.main-service .frontend_card ~ .percentBar div::after{
+    content: "52%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+.main-service .backend_card ~ .percentBar div{
+    height: 100%;
+    background: #9c0000;
+    width: 5%;
+    border-radius: 30px;
+}
+.main-service .backend_card ~ .percentBar div::after{
+    content: "5%";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: fantasy;
+}
+/* contact section */
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #060057c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-contact .box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-contact .content{
+    width: 52%;
+    text-align:left;
+}
+.main-contact h2,.main-contact h3{
+    color: #fff;
+    margin: 20px 0;
+}
+.main-contact h3{
+    font-size: 20px;
+}
+.main-contact h2{
+    font-size: 32px;
+}
+form{
+    width: 300px;
+    text-align: center;
+}
+.main-contact input,.main-contact  textarea{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 5px;
+    resize: none;
+    border: none;
+}
+.main-contact input{
+    margin-bottom: 20px;
+}
+.main-contact .content button{
+    background-color: #005658;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0;
+}
+.main-contact .content button:hover{
+    background-color: #005758ab;
+}
+.main-contact form button{
+    font-size: 15px;
+    padding: 12px 40px;
+    margin: 20px 0;
+    background-color: #470070;
+    color: #ffffff;
+    font-family: impact;
+    border: none;
+    border-radius: 20px;
+}
+.main-contact form button:hover{
+    background-color: #470070bb;
+}

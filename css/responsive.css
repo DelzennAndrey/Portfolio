@@ -1,0 +1,71 @@
+/* navbar */
+@media only screen and (max-width:800px) {
+    nav h2{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:700px){
+    nav h2{
+        display: block;
+    }
+    .dropdown .fa-caret-down{
+        display: block;
+        position: absolute;
+        bottom: -35px;
+        left: 48%;
+    }
+    .menu{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        transition: .4s ease;
+    }
+    .dropdown{
+        background-color: #150d3ae9;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+    }
+    .menu a{
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+    .dropdown:hover > .menu {
+        height: 300px;
+    }
+}
+/* section */
+@media only screen and (max-width:700px) {
+    .home-main .content{
+        width: 100%;
+        margin: 0 50px;
+    }
+    .home-main .pic img{
+        width: 12rem;
+        margin-top: 120px;
+    }
+    .home-main .accounts{
+        text-align: center;
+        margin: 25px 0;
+    }
+    .main-contact .content,.main-contact .accounts{
+        width: 100%;
+        text-align: center;
+    }
+    .main-skills h1,.main-project h1,.main-service h1,.main-contact h1{
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-skills .box{
+        width: 100%;
+    }
+}
