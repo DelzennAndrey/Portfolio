@@ -162,12 +162,12 @@ button{
 }
 .js_card ~ .percentBar div{
     background: #a7a401;
-    width: 15%;
+    width: 20%;
     height: 100%;
     border-radius:50px;
 }
 .js_card ~ .percentBar::after{
-    content: '15%';
+    content: '20%';
     position: absolute;
     right: 10px;
     top: 0;
@@ -175,12 +175,12 @@ button{
 }
 .github_card ~ .percentBar div{
     background: #747473;
-    width: 58%;
+    width: 50%;
     height: 100%;
     border-radius:50px;
 }
 .github_card ~ .percentBar::after{
-    content: '58%';
+    content: '50%';
     position: absolute;
     right: 10px;
     top: 0;
@@ -463,11 +463,11 @@ button{
 .main-service .frontend_card ~ .percentBar div{
     height: 100%;
     background: #1900ff;
-    width: 52%;
+    width: 50%;
     border-radius: 30px;
 }
 .main-service .frontend_card ~ .percentBar div::after{
-    content: "52%";
+    content: "50%";
     position: absolute;
     right: 10px;
     top: 0;
@@ -476,11 +476,11 @@ button{
 .main-service .backend_card ~ .percentBar div{
     height: 100%;
     background: #9c0000;
-    width: 5%;
+    width: 20%;
     border-radius: 30px;
 }
 .main-service .backend_card ~ .percentBar div::after{
-    content: "5%";
+    content: "20%";
     position: absolute;
     right: 10px;
     top: 0;
